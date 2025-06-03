@@ -1,6 +1,5 @@
 
-// Platzhalter für Kurs-API-Integration und Benachrichtigungen
-
+// Kursdaten & News Platzhalter
 function speichern() {
     const kurs = document.getElementById('einkaufspreis').value;
     if (kurs) {
@@ -13,10 +12,7 @@ function speichern() {
 
 function ladeKurse() {
     const aktienDaten = document.getElementById('aktienDaten');
-    aktienDaten.innerHTML = '<p>Hier erscheinen bald die Kursdaten und Benachrichtigungen.</p>';
+    aktienDaten.innerHTML += '<p>(Hier erscheinen bald die Kursdaten und Nachrichten...)</p>';
 }
 
-// Bei Seitenaufruf Kursdaten laden
 ladeKurse();
-
-// Platzhalter für Web-Push-Benachrichtigungen (noch nicht aktiv)
