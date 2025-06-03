@@ -1,5 +1,6 @@
 
-// Einstiegskurs speichern (Platzhalter-Logik)
+// Platzhalter für Kurs-API-Integration und Benachrichtigungen
+
 function speichern() {
     const kurs = document.getElementById('einkaufspreis').value;
     if (kurs) {
@@ -9,3 +10,13 @@ function speichern() {
         document.getElementById('meldung').innerText = 'Bitte einen Kurs eingeben.';
     }
 }
+
+function ladeKurse() {
+    const aktienDaten = document.getElementById('aktienDaten');
+    aktienDaten.innerHTML = '<p>Hier erscheinen bald die Kursdaten und Benachrichtigungen.</p>';
+}
+
+// Bei Seitenaufruf Kursdaten laden
+ladeKurse();
+
+// Platzhalter für Web-Push-Benachrichtigungen (noch nicht aktiv)
